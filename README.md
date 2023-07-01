@@ -1,5 +1,5 @@
 # Dynamic Belief Landscape Modeling using Attention Graph Neural Network  
-This is a dynamic attention-based model for learning the belief landscape from a set of tweets in a period of time. 
+This is a dynamic attention-based model for learning the belief landscape from a set of tweets in a period of time. The dataset used in this study is the courtesy of Dr. Joshua E. Introne from Syracuse University. This repository is inspired by his paper [**Measuring Belief Dynamics on Twitter**](https://ojs.aaai.org/index.php/ICWSM/article/view/22154). 
 
 At each timestamp, the current version uses user retweet relationship (user-user) as the main adjacency matrix and the user hashtag relationship (user-hashtag) as the feature vector for each user (note that it is possible to not use the features using flags available in `config.py`). You can define the user-user adjacency based on any relationship of preference, for example based on the similarity of the hashtags they use. But, you have to maintain it as an adjacency matrix (i.e., #columns=#rows). The only matrix that can be non-square in the input is the feature matrix.
 
